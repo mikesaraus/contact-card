@@ -1,0 +1,29 @@
+.pa-none {
+  padding: 0;
+}
+
+.pb-none {
+  padding-bottom: 0;
+}
+
+.pt-none {
+  padding-top: 0;
+}
+
+.pl-none {
+  padding-left: 0;
+}
+
+.pr-none {
+  padding-right: 0;
+}
+
+.py-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.px-none {
+  padding-left: 0;
+  padding-right: 0;
+}

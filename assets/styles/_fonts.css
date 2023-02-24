@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Thin.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-ThinItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-ExtraLight.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-ExtraLightItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Light.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-LightItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Regular.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Italic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Medium.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-MediumItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-SemiBold.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-SemiBoldItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Bold.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-BoldItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-ExtraBold.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-ExtraBoldItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-Heavy.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: url('/assets/fonts/CerebriSansPro-HeavyItalic.otf') format('opentype'),
+    url('/assets/fonts/CerebriSansPro-HeavyItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
