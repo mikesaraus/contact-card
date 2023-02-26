@@ -71,13 +71,17 @@ body {
 
 .bottom-wrapper {
   padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom-cover {
-  border-radius: var(--border-radius);
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 1140px;
+  border-radius: var(--border-radius);
   background-color: var(--secondary-color);
 }
 
