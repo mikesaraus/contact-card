@@ -1,3 +1,4 @@
+/* gutter */
 .gutter-sm {
   margin-top: -8px;
   margin-left: -8px;
@@ -36,4 +37,45 @@
 .gutter-xl > * {
   margin-top: 24px;
   margin-left: 24px;
+}
+
+/* col gutter */
+.gutter-col-sm {
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.gutter-col-sm > * {
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+.gutter-col-md {
+  margin-top: -12px;
+  margin-left: -12px;
+}
+
+.gutter-col-md > * {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.gutter-col-lg {
+  margin-top: -18px;
+  margin-left: -18px;
+}
+
+.gutter-col-lg > * {
+  padding-top: 18px;
+  padding-left: 18px;
+}
+
+.gutter-col-xl {
+  margin-top: -24px;
+  margin-left: -24px;
+}
+
+.gutter-col-xl > * {
+  padding-top: 24px;
+  padding-left: 24px;
 }

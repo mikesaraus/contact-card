@@ -1,0 +1,30 @@
+input {
+  border: 0;
+  min-width: 0;
+  width: 100%;
+  outline: 0 !important;
+  user-select: auto;
+  font-weight: 600;
+  font-size: var(--base-font-size);
+  color: var(--primary-color);
+  -webkit-user-select: auto;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 17px;
+
+  max-width: 100%;
+  min-height: 60px;
+
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.field-wrapper > input {
+  width: 100%;
+  height: inherit;
+}

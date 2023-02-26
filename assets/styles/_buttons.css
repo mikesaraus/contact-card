@@ -1,0 +1,16 @@
+.btn {
+  border: none;
+  color: white;
+  padding: 20px 35px;
+  font-size: var(--base-font-size);
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+}
+
+.btn-edit {
+  color: var(--grey-1);
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

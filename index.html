@@ -1,11 +1,20 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Verdementa - Contacts MadridIN</title>
-    <link rel="stylesheet" type="text/css" href="assets/styles/index.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"
+    />
+    <meta name="description" content="Contacts MadridIN" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
   </head>
 
   <body>
+    <!-- top -->
     <div class="top-cover"></div>
+
     <!-- main container -->
     <div class="container">
       <!-- cards wrapper -->
@@ -18,20 +27,40 @@
                 <div class="image-container">
                   <img class="rounded bordered-img profile-img" src="assets/images/profile.png" />
                 </div>
-                <a href="#edit" class="btn-edit text-grey-1">Edit</a>
+                <a id="btn-edit" class="cursor-pointer btn-edit w-600 vif-not-editing" style="margin-top: 4px">
+                  Edit
+                </a>
+                <a id="btn-save" class="hidden cursor-pointer btn-edit w-600 vif-editing" style="margin-top: 4px">
+                  Save
+                </a>
               </div>
-              <h1 class="mb-none h3 w-600">Jose Mu&#241;oz</h1>
-              <div class="spacer-h-md"></div>
+              <div class="spacer-h-sm"></div>
+              <div class="row items-center justify-center">
+                <button id="btn-upload-avatar" class="btn btn-upload cursor-pointer text-grey-1 w-600 vif-editing">
+                  Upload New Photo
+                </button>
+              </div>
+              <h1 class="mb-none h3 w-600 vif-not-editing">Jose Mu&#241;oz</h1>
 
-              <div class="gutter-sm">
+              <div class="gutter-sm vif-not-editing">
                 <div class="h6 w-600 text-grey-1">iNversor Ingenioso</div>
                 <div class="h6 w-600 text-grey-1">Master & Commander</div>
+              </div>
+              <div class="gutter-sm vif-editing text-left">
+                <div class="row items-center justify-start">
+                  <div class="col-12 h6 w-600 text-grey-1">Nombre</div>
+                  <div class="col-12 w-600 text-grey-1">
+                    <div class="field-wrapper">
+                      <input type="text" placeholder="Nombre" value="iNversor Ingenioso" name="fullname" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <hr />
             <div class="card-section">
               <div class="h4 w-600 mt-none">My Bio</div>
-              <div class="spacer-h-md"></div>
+              <div class="spacer-h-lg"></div>
               <div class="text-grey-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore.
@@ -47,7 +76,7 @@
             </div>
 
             <div class="card-section">
-              <div class="gutter-md">
+              <div class="gutter-md h6">
                 <div class="row">
                   <div class="col-12 col-sm-9">Busco Oportunidades en:</div>
                   <div class="col-12 col-sm-3">La Roja</div>
@@ -72,10 +101,139 @@
             </div>
           </div>
           <!-- end Que Busco? -->
+
+          <!-- Tipos de inversiones Realizadas -->
+          <div class="card">
+            <div class="card-section bg-accent">
+              <div class="h4 w-600 text-white">Tipos de inversiones Realizadas</div>
+            </div>
+
+            <div class="card-section">
+              <div class="row gutter-col-lg">
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-1.png" class="fit cursor-pointer" />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-2.png" class="fit image-filtered cursor-pointer" />
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-3.png" class="fit image-filtered cursor-pointer" />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-4.png" class="fit image-filtered cursor-pointer" />
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-5.png" class="fit image-filtered cursor-pointer" />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-6.png" class="fit image-filtered cursor-pointer" />
+                </div>
+              </div>
+
+              <div class="spacer-h-lg"></div>
+              <div class="spacer-h-lg"></div>
+              <div class="gutter-md h6">
+                <div class="row">
+                  <div class="col-12 col-sm-9">INversiones IN realizadas:</div>
+                  <div class="col-12 col-sm-3">24</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-9">INversiones IN en marcha:</div>
+                  <div class="col-12 col-sm-3">2</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-9">Capital Invertido:</div>
+                  <div class="col-12 col-sm-3">500&euro;</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-9">Capital Disponible:</div>
+                  <div class="col-12 col-sm-3">200&euro;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end Tipos de inversiones Realizadas -->
+
+          <!-- Datos de Contacto? -->
+          <div class="card">
+            <div class="card-section bg-secondary">
+              <div class="h4 w-600 text-white">Datos de Contacto</div>
+            </div>
+
+            <div class="card-section">
+              <div class="gutter-lg">
+                <div class="card-bordered">
+                  <div class="row items-center gutter-lg">
+                    <div class="col-grow">
+                      <img src="assets/images/icons/discord.svg" />
+                    </div>
+                    <div class="col-grow col-sm-9">
+                      <div class="w-600">Discord</div>
+                      <div class="text-grey-2">@Jose Mu&#241;oz</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bordered">
+                  <div class="row items-center gutter-lg">
+                    <div class="col-grow">
+                      <img src="assets/images/icons/mail.svg" />
+                    </div>
+                    <div class="col-grow col-sm-9">
+                      <div class="w-600">Email</div>
+                      <div class="text-grey-2">jose@lin.es</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bordered">
+                  <div class="row items-center gutter-lg">
+                    <div class="col-grow">
+                      <img src="assets/images/icons/phone.svg" />
+                    </div>
+                    <div class="col-grow col-sm-9">
+                      <div class="w-600">Phone Number</div>
+                      <div class="text-grey-2">+34 600000000</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bordered">
+                  <div class="row items-center gutter-lg">
+                    <div class="col-grow">
+                      <img src="assets/images/icons/web.svg" />
+                    </div>
+                    <div class="col-grow">
+                      <div class="w-600 col-sm-9">Website</div>
+                      <div class="text-grey-2">http:www.programain.es</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bordered">
+                  <div class="row items-center gutter-lg">
+                    <div class="col-grow">
+                      <img src="assets/images/icons/pin-location.svg" />
+                    </div>
+                    <div class="col-grow col-sm-9">
+                      <div class="w-600">Location</div>
+                      <div class="text-grey-2">Alcobendas, Madrid</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end Datos de Contacto-->
         </div>
       </div>
       <!-- end cards wrapper -->
     </div>
     <!-- end main container-->
+
+    <!-- bottom -->
+    <div class="bottom-wrapper mx-auto">
+      <div class="bottom-cover text-center text-white">Guardar Cambios</div>
+    </div>
+
+    <script type="text/javascript" src="assets/scipts/app.js"></script>
   </body>
 </html>

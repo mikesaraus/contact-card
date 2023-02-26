@@ -1,31 +1,48 @@
-.bg-secondary {
-  background-color: var(--secondary-color);
-}
-
+/* primary */
 .bg-primary {
   background-color: var(--primary-color);
-}
-
-.text-secondary {
-  color: var(--secondary-color);
 }
 
 .text-primary {
   color: var(--primary-color);
 }
 
+/* secondary */
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* accent */
+.bg-accent {
+  background-color: var(--accent-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+
+/* grey-1 */
 .text-grey-1 {
   color: var(--grey-1);
 }
+.bg-grey-1 {
+  background-color: var(--grey-1);
+}
 
+/* grey-2 */
 .text-grey-2 {
   color: var(--grey-2);
 }
-
-.bg-white {
-  background-color: white;
+.bg-grey-2 {
+  background-color: var(--grey-2);
 }
 
+/* white */
 .text-white {
   color: white;
+}
+.bg-white {
+  background-color: white;
 }

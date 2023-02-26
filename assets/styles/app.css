@@ -1,17 +1,19 @@
 @import url(variable.css);
 @import url(_fonts.css);
+@import url(_colors.css);
+@import url(_text.css);
 @import url(_card.css);
 @import url(_misc.css);
 @import url(_titles.css);
-@import url(_text.css);
-@import url(_colors.css);
+@import url(_buttons.css);
+@import url(_field.css);
 
 *,
 ::after,
 ::before {
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: var(--primary-color);
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 * {
@@ -19,6 +21,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   shape-rendering: crispEdges;
+}
+
+html {
+  font-family: 'CerebriSansPro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  color: var(--primary-color);
 }
 
 body {
@@ -35,8 +46,8 @@ body {
   font-family: 'CerebriSansPro';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
   color: var(--primary-color);
 }
 
@@ -49,11 +60,31 @@ body {
 }
 
 .top-cover {
-  background: var(--top-bg);
+  background-color: var(--accent-color);
   position: absolute;
   top: 0;
   left: 0;
   height: 189px;
   width: 100%;
   border-radius: 0px 0px 60px 60px;
+}
+
+.bottom-wrapper {
+  padding: 15px;
+}
+
+.bottom-cover {
+  border-radius: var(--border-radius);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1140px;
+  background-color: var(--secondary-color);
+}
+
+.vif-editing {
+  display: var(--cond-editing);
+}
+
+.vif-not-editing {
+  display: var(--cond-not-editing);
 }
