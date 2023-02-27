@@ -152,7 +152,7 @@
 }
 
 /* Additional sizes for small and medium screens */
-@media (min-width: 400px) {
+@media (min-width: 414px) {
   .col-sm-0,
   .col-sm-1,
   .col-sm-10,

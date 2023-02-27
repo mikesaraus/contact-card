@@ -1,9 +1,11 @@
 :root {
+  --base-font-name: 'CerebriSansPro';
   --base-font-size: 18px;
-  --base-line-height: 23px;
+  --base-line-height: 25px;
   --primary-color: #484848;
   --secondary-color: #e65558;
   --accent-color: #054169;
+  --placeholder-color: #48484880;
   --grey-2: #484848b3;
   --grey-1: #48484880;
   --card-padding: 40px 54px;
@@ -32,4 +34,12 @@
   :root {
     --card-padding: 20px 24px;
   }
+}
+
+[vif='editing'] {
+  display: var(--cond-editing);
+}
+
+[vif='not-editing'] {
+  display: var(--cond-not-editing);
 }

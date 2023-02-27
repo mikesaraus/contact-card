@@ -7,6 +7,8 @@
 @import url(_titles.css);
 @import url(_buttons.css);
 @import url(_field.css);
+@import url(_tooltip.css);
+@import url(_icons.css);
 
 *,
 ::after,
@@ -23,13 +25,29 @@
   shape-rendering: crispEdges;
 }
 
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--placeholder-color) !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--placeholder-color) !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--placeholder-color) !important;
+}
+
 html {
-  font-family: 'CerebriSansPro';
+  font-family: var(--base-font-name);
   font-style: normal;
   font-weight: 500;
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
   color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 body {
@@ -43,7 +61,7 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 
-  font-family: 'CerebriSansPro';
+  font-family: var(--base-font-name);
   font-style: normal;
   font-weight: 500;
   font-size: var(--base-font-size);
@@ -83,12 +101,4 @@ body {
   max-width: 1140px;
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
-}
-
-.vif-editing {
-  display: var(--cond-editing);
-}
-
-.vif-not-editing {
-  display: var(--cond-not-editing);
 }

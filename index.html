@@ -25,37 +25,60 @@
             <div class="card-section">
               <div class="relative-position">
                 <div class="image-container">
-                  <img class="rounded bordered-img profile-img" src="assets/images/profile.png" />
+                  <img class="rounded bordered-img profile-img" tooltip="mike" src="{{avatar}}" />
                 </div>
-                <a id="btn-edit" class="cursor-pointer btn-edit w-600 vif-not-editing" style="margin-top: 4px">
-                  Edit
-                </a>
-                <a
-                  id="btn-save"
-                  class="cursor-pointer btn-edit w-600 vif-editing"
-                  style="margin-top: 4px; display: none !important"
+                <a vif="not-editing" id="btn-edit" class="cursor-pointer btn-edit w-600" style="margin-top: 4px"
+                  >Edit</a
                 >
-                  Save
-                </a>
+                <a vif="editing" id="btn-save" class="cursor-pointer btn-edit w-600" style="margin-top: 4px">Save</a>
               </div>
               <div class="spacer-h-sm"></div>
               <div class="row items-center justify-center">
-                <button id="btn-upload-avatar" class="btn btn-upload cursor-pointer text-grey-1 w-600 vif-editing">
+                <button vif="editing" id="btn-upload-avatar" class="btn btn-upload cursor-pointer text-grey-1 w-600">
                   Upload New Photo
                 </button>
               </div>
-              <h1 class="mb-none h3 w-600 vif-not-editing">Jose Mu&#241;oz</h1>
+              <h1 vif="not-editing" class="mb-none h3 w-600">{{name}}</h1>
 
-              <div class="gutter-sm vif-not-editing">
-                <div class="h6 w-600 text-grey-1">iNversor Ingenioso</div>
-                <div class="h6 w-600 text-grey-1">Master & Commander</div>
+              <div vif="not-editing" class="gutter-sm">
+                <div class="h6 text-grey-1">{{position}}</div>
+                <div class="h6 w-600 text-grey-1">{{role}}</div>
               </div>
-              <div class="gutter-sm vif-editing text-left">
-                <div class="row items-center justify-start">
-                  <div class="col-12 h6 w-600 text-grey-1">Nombre</div>
-                  <div class="col-12 w-600 text-grey-1">
-                    <div class="field-wrapper">
-                      <input type="text" placeholder="Nombre" value="iNversor Ingenioso" name="fullname" />
+              <div vif="editing" class="spacer-h-md"></div>
+              <div vif="editing" class="gutter-lg text-left">
+                <div>
+                  <div class="row items-center justify-start gutter-col-md">
+                    <div class="col-12 w-600 text-grey-1 relative-position">
+                      Nombre
+                      <div class="icon-top-wrapper" tooltip="Info: Nombre">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12 w-600 text-grey-1">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="Nombre" value="{{name}}" name="fullname" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-md">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Puesto INventado
+                      <div class="icon-top-wrapper" tooltip="Info: Puesto INventado">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12 w-600 text-grey-1">
+                      <div class="custom-select">
+                        <select name="position">
+                          <option value="0">Puesto INventado</option>
+                          <option value="1">iNversor Ingenioso</option>
+                          <option value="2">iNversor Ingenioso 1</option>
+                          <option value="3">iNversor Ingenioso 2</option>
+                          <option value="4">iNversor Ingenioso 3</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -65,9 +88,17 @@
             <div class="card-section">
               <div class="h4 w-600 mt-none">My Bio</div>
               <div class="spacer-h-lg"></div>
-              <div class="text-grey-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore.
+              <div vif="not-editing" class="text-grey-2">{{bio}}</div>
+              <div vif="editing">
+                <textarea
+                  rows="3"
+                  name="bio"
+                  placeholder="Bio"
+                  spellcheck="false"
+                  class="w-500 text-grey-1 text-center"
+                >
+{{bio}}</textarea
+                >
               </div>
             </div>
           </div>
@@ -80,7 +111,7 @@
             </div>
 
             <div class="card-section">
-              <div class="gutter-md h6">
+              <div vif="not-editing" class="gutter-md h6">
                 <div class="row">
                   <div class="col-12 col-sm-9">Busco Oportunidades en:</div>
                   <div class="col-12 col-sm-3">La Roja</div>
@@ -102,6 +133,89 @@
                   <div class="col-12 col-sm-3">200&euro;</div>
                 </div>
               </div>
+              <div vif="editing" class="gutter-lg">
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Busco Oportunidades en:
+                      <div class="icon-top-wrapper" tooltip="Info: Busco Oportunidades en">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="custom-select">
+                        <select name="oportunity">
+                          <option value="0">Busco Oportunidades en:</option>
+                          <option value="1">La Roja</option>
+                          <option value="2">La Roja 1</option>
+                          <option value="3">La Roja 2</option>
+                          <option value="4">La Roja 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      ROI Comprar para Vender
+                      <div class="icon-top-wrapper" tooltip="Info: ROI Comprar para Vender">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="> 15%" name="dt-roi" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      ROI Comprar para Alquiler
+                      <div class="icon-top-wrapper" tooltip="Info: ROI Comprar para Alquiler">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="> 9%" name="dt-roi2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Ticket Minimo
+                      <div class="icon-top-wrapper" tooltip="Info: Ticket Minimo">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="100&euro;" name="dt-ticket1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Ticket Maximo
+                      <div class="icon-top-wrapper" tooltip="Info: Ticket Maximo">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="200&euro;" name="dt-ticket2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- end Que Busco? -->
@@ -114,31 +228,37 @@
 
             <div class="card-section">
               <div class="row gutter-col-lg">
-                <div class="col-12 col-sm-6">
-                  <img src="assets/images/viviendas/viviendas-1.png" class="fit cursor-pointer" />
+                <div class="col-12 col-sm-6 relative-position">
+                  <img src="assets/images/viviendas/viviendas-1.png" class="full-width cursor-pointer" />
+                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
                 <div class="col-12 col-sm-6">
-                  <img src="assets/images/viviendas/viviendas-2.png" class="fit image-filtered cursor-pointer" />
-                </div>
-
-                <div class="col-12 col-sm-6">
-                  <img src="assets/images/viviendas/viviendas-3.png" class="fit image-filtered cursor-pointer" />
-                </div>
-                <div class="col-12 col-sm-6">
-                  <img src="assets/images/viviendas/viviendas-4.png" class="fit image-filtered cursor-pointer" />
+                  <img src="assets/images/viviendas/viviendas-2.png" class="full-width image-filtered cursor-pointer" />
+                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
 
                 <div class="col-12 col-sm-6">
-                  <img src="assets/images/viviendas/viviendas-5.png" class="fit image-filtered cursor-pointer" />
+                  <img src="assets/images/viviendas/viviendas-3.png" class="full-width image-filtered cursor-pointer" />
+                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
                 <div class="col-12 col-sm-6">
-                  <img src="assets/images/viviendas/viviendas-6.png" class="fit image-filtered cursor-pointer" />
+                  <img src="assets/images/viviendas/viviendas-4.png" class="full-width image-filtered cursor-pointer" />
+                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-5.png" class="full-width image-filtered cursor-pointer" />
+                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <img src="assets/images/viviendas/viviendas-6.png" class="full-width image-filtered cursor-pointer" />
+                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
               </div>
 
               <div class="spacer-h-lg"></div>
               <div class="spacer-h-lg"></div>
-              <div class="gutter-md h6">
+              <div vif="not-editing" class="gutter-md h6">
                 <div class="row">
                   <div class="col-12 col-sm-9">INversiones IN realizadas:</div>
                   <div class="col-12 col-sm-3">24</div>
@@ -156,6 +276,68 @@
                   <div class="col-12 col-sm-3">200&euro;</div>
                 </div>
               </div>
+              <div vif="editing" class="gutter-lg">
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      INversiones IN realizadas:
+                      <div class="icon-top-wrapper" tooltip="Info: INversiones IN realizadas:">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="24" name="dt-inversiones1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      INversiones IN en marcha:
+                      <div class="icon-top-wrapper" tooltip="Info: INversiones IN en marcha:">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="2" name="dt-inversiones2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Capital Invertido:
+                      <div class="icon-top-wrapper" tooltip="Info: Capital Invertido:">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="500&euro;" name="dt-capital1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Capital Disponible:
+                      <div class="icon-top-wrapper" tooltip="Info: Capital Disponible:">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="" value="200&euro;" name="dt-capital2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- end Tipos de inversiones Realizadas -->
@@ -167,7 +349,7 @@
             </div>
 
             <div class="card-section">
-              <div class="gutter-lg">
+              <div vif="not-editing" class="gutter-lg">
                 <div class="card-bordered">
                   <div class="row items-center gutter-lg">
                     <div class="col-grow">
@@ -175,7 +357,7 @@
                     </div>
                     <div class="col-grow col-sm-9">
                       <div class="w-600">Discord</div>
-                      <div class="text-grey-2">@Jose Mu&#241;oz</div>
+                      <div class="text-grey-2">{{social_discord}}</div>
                     </div>
                   </div>
                 </div>
@@ -186,7 +368,7 @@
                     </div>
                     <div class="col-grow col-sm-9">
                       <div class="w-600">Email</div>
-                      <div class="text-grey-2">jose@lin.es</div>
+                      <div class="text-grey-2">{{social_email}}</div>
                     </div>
                   </div>
                 </div>
@@ -197,7 +379,7 @@
                     </div>
                     <div class="col-grow col-sm-9">
                       <div class="w-600">Phone Number</div>
-                      <div class="text-grey-2">+34 600000000</div>
+                      <div class="text-grey-2">{{social_phone}}</div>
                     </div>
                   </div>
                 </div>
@@ -208,7 +390,7 @@
                     </div>
                     <div class="col-grow">
                       <div class="w-600 col-sm-9">Website</div>
-                      <div class="text-grey-2">http:www.programain.es</div>
+                      <div class="text-grey-2">{{social_website}}</div>
                     </div>
                   </div>
                 </div>
@@ -219,7 +401,94 @@
                     </div>
                     <div class="col-grow col-sm-9">
                       <div class="w-600">Location</div>
-                      <div class="text-grey-2">Alcobendas, Madrid</div>
+                      <div class="text-grey-2">{{social_location}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div vif="editing" class="gutter-lg">
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Discord
+                      <div class="icon-top-wrapper" tooltip="Info: Discord Username">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input
+                          type="text"
+                          placeholder="@discord_username"
+                          value="{{social_discord}}"
+                          name="social_discord"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Email
+                      <div class="icon-top-wrapper" tooltip="Info: Email Address">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="user@mail.com" value="{{social_email}}" name="social_email" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Phone Number
+                      <div class="icon-top-wrapper" tooltip="Info: Phone Number">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="+34 600000000" value="{{social_phone}}" name="social_phone" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Website
+                      <div class="icon-top-wrapper" tooltip="Info: Website">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input
+                          type="text"
+                          placeholder="https://www.com"
+                          value="{{social_website}}"
+                          name="social_website"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row items-center justify-start gutter-col-sm">
+                    <div class="col-12 text-grey-1 relative-position">
+                      Location
+                      <div class="icon-top-wrapper" tooltip="Info: Location">
+                        <span class="icon"><img src="assets/images/icons/help.svg" /></span>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="Address" value="{{social_location}}" name="social_location" />
+                      </div>
                     </div>
                   </div>
                 </div>

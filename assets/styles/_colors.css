@@ -46,3 +46,11 @@
 .bg-white {
   background-color: white;
 }
+
+/* placeholder */
+.text-placeholder {
+  color: var(--placeholder-color);
+}
+.bg-placeholder {
+  background-color: var(--placeholder-color);
+}
