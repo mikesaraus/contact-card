@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56">
+	<title>phone-svg</title>
+	<defs>
+		<image  width="56" height="56" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAAXNSR0IB2cksfwAAAWJQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////JEitwAAAAHZ0Uk5TADr7/4mAmqQ+qPECfaJQMwz99QSSwfwVYrkQ/i60vg5z24XI7QZOFuYB1mQjBfirqQ2ftcN7XQjnHEL3A7zvCuodD0o3+Uhe85sLabKgsydU4e5o1fIRLG+sGzAY9pQTYOx/QPomPFkq0CTSPYIfpzXPqlWKEgeLcV8AAAGnSURBVHicxdbXVsJAEAbgNWMvIKioRETFhkLsoqKiYG/YsIu99/b+BuRAspmQSW787zZ7vjPJ7mQTxv4zBQJAoQVXBKkUm3Yl8JdSk64s46C8wpSrhGyqzDgbKGKnu2qHEjrJrgbUqaXCOg666mmuAfg0kpzbpYFiEwV6NA6gmQIRB+C1CluswlarsI0AfYhr7yDATsSROqBL47r9FMdYD+c8NMZYLwcDVBiU1LCPClk/V5J8eAxwcJBcckgNXW6y5EoOk+EIJ0epMDSmhuI4VU5wJcOTVDnFyekIVTo5OTOrmIzG5nRvIcBBmF/Izi2KAEvLKzpylZewlpmxiemhsK7z1mxopBBLdV88d2ET7Ub/lkbC9k7EKyjGu3FMhiStBCmhGoroJ3tPRCSfBHau7IcJEg4QaadAOETkEQWKx4g8OSXIJLZCZ8iu8DnHIAs2G7kL1MmdcGkAQzqQsat823J9o+vkJuJ/KHKRbvM4+XbvBB14n9el8oAxhyGT8/ikcT79dVHl2ad2LzSWyuubYlmMH0+V94/0QSZ+mmPpRL++kz8WHJJfMV0u9DAcT6IAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer" href="#img1" x="0" y="0"/>
+</svg>

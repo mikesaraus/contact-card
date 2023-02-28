@@ -11,6 +11,7 @@
   --card-padding: 40px 54px;
   --border-radius: 7px;
   --border-color: #e3e3e3;
+  --box-shadow: 0px 10px 30px 5px rgba(5, 65, 105, 0.08);
   --cond-editing: none;
   --cond-not-editing: unset;
 }
@@ -19,6 +20,8 @@
 @media (max-width: 1200px) {
   :root {
     --card-padding: 40px 54px;
+    --base-font-size: 18px;
+    --base-line-height: 25px;
   }
 }
 
@@ -26,6 +29,8 @@
 @media (max-width: 800px) {
   :root {
     --card-padding: 40px 54px;
+    --base-font-size: 18px;
+    --base-line-height: 22px;
   }
 }
 
@@ -33,13 +38,31 @@
 @media (max-width: 400px) {
   :root {
     --card-padding: 20px 24px;
+    --base-font-size: 16px;
+    --base-line-height: 20px;
   }
 }
 
 [vif='editing'] {
-  display: var(--cond-editing);
+  display: var(--cond-editing) !important;
 }
 
 [vif='not-editing'] {
-  display: var(--cond-not-editing);
+  display: var(--cond-not-editing) !important;
+}
+
+[vcond] [von-hover] {
+  display: none !important;
+}
+
+[vcond]:hover [von-hover] {
+  display: block !important;
+}
+
+[vcond] [voff-hover] {
+  display: block !important;
+}
+
+[vcond]:hover [voff-hover] {
+  display: none !important;
 }

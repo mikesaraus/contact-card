@@ -4,12 +4,25 @@ const userInfo = {
   role: 'Master & Commander',
   avatar: 'assets/images/profile.jpeg',
   bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-  social_discord: 'Jose Mu&#241;oz',
+  social_discord: '@Jose Mu&#241;oz',
   social_email: 'jose@lin.es',
-  social_phone: '+34 600000000',
-  social_website: 'https://www.programain.es',
+  social_phone: '+34600000000',
+  social_website: 'https://programain.es',
   social_location: 'Alcobendas, Madrid',
 };
+
+function openUrl(link) {
+  try {
+    if (!link.startsWith('mailto:') && !link.startsWith('tel:') && !link.startsWith('https://' || 'http://')) {
+      window.open('https://' + link);
+    } else {
+      window.open(link);
+    }
+  } catch (err) {
+    console.log("Error from socialpage handlbars", err)
+    throw err;
+  }
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   // Editing variable
@@ -34,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let hash = window.location.hash;
     window.editing = hash.toLowerCase() === '#edit';
     toggleElements();
-    console.log(userInfo);
+    // console.info(userInfo);
   }
 
   init();

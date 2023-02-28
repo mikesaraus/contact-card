@@ -1,4 +1,13 @@
 input,
+textarea,
+select,
+button {
+  font-family: var(--base-font-name);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+input,
 textarea {
   border: 0;
   min-width: 0;
@@ -33,7 +42,6 @@ textarea {
 
 /* textarea */
 textarea {
-  font-family: var(--base-font-name);
   padding: 17px;
   border: 1px solid var(--border-color);
 }
@@ -126,4 +134,9 @@ textarea {
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* file uploader */
+input[type="file"] {
+  display: none;
 }

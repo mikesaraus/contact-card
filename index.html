@@ -33,12 +33,14 @@
               </div>
               <div class="spacer-h-sm"></div>
               <div class="row items-center justify-center">
-                <button vif="editing" id="btn-upload-avatar" class="btn btn-upload cursor-pointer text-grey-1 w-600">
+                <label for="upload-avatar" vif="editing" id="btn-upload-avatar" class="btn btn-upload cursor-pointer text-grey-1 w-600">
                   Upload New Photo
-                </button>
+                  <input id="upload-avatar" type="file"/>
+                </label>
               </div>
               <h1 vif="not-editing" class="mb-none h3 w-600">{{name}}</h1>
 
+              <div class="spacer-h-sm"></div>
               <div vif="not-editing" class="gutter-sm">
                 <div class="h6 text-grey-1">{{position}}</div>
                 <div class="h6 w-600 text-grey-1">{{role}}</div>
@@ -95,9 +97,7 @@
                   placeholder="Bio"
                   spellcheck="false"
                   class="w-500 text-grey-1 text-center"
-                >
-{{bio}}</textarea
-                >
+                >{{bio}}</textarea>
               </div>
             </div>
           </div>
@@ -213,39 +213,61 @@
           </div>
           <!-- end Que Busco? -->
 
-          <!-- Tipos de inversiones Realizadas -->
+          <!-- Inversiones Realizadas -->
           <div class="card">
             <div class="card-section bg-accent">
-              <div class="h4 w-600 text-white">Tipos de inversiones Realizadas</div>
+              <div class="h4 w-600 text-white">Inversiones Realizadas</div>
             </div>
 
             <div class="card-section">
-              <div class="row gutter-col-lg">
+              <div vif="editing" class="full-width">
+                <label for="upload-images" class="full-width">
+                  <input id="upload-images" type="file" multiple/>
+                  <div class="row gutter-col-lg">
+                    <div class="col-6 relative-position">
+                      <img src="assets/images/viviendas/viviendas-1.png" class="full-width cursor-pointer" />
+                    </div>
+                    <div class="col-6">
+                      <img src="assets/images/viviendas/viviendas-2.png" class="full-width image-filtered cursor-pointer" />
+                    </div>
+              
+                    <div class="col-6">
+                      <img src="assets/images/viviendas/viviendas-3.png" class="full-width image-filtered cursor-pointer" />
+                    </div>
+                    <div class="col-6">
+                      <img src="assets/images/viviendas/viviendas-4.png" class="full-width image-filtered cursor-pointer" />
+                    </div>
+              
+                    <div class="col-6">
+                      <img src="assets/images/viviendas/viviendas-5.png" class="full-width image-filtered cursor-pointer" />
+                    </div>
+                    <div class="col-6">
+                      <img src="assets/images/viviendas/viviendas-6.png" class="full-width image-filtered cursor-pointer" />
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div vif="not-editing" class="full-width">
+                <div class="row gutter-col-lg">
                 <div class="col-6 relative-position">
                   <img src="assets/images/viviendas/viviendas-1.png" class="full-width cursor-pointer" />
-                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
                 <div class="col-6">
                   <img src="assets/images/viviendas/viviendas-2.png" class="full-width image-filtered cursor-pointer" />
-                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
 
                 <div class="col-6">
                   <img src="assets/images/viviendas/viviendas-3.png" class="full-width image-filtered cursor-pointer" />
-                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
                 <div class="col-6">
                   <img src="assets/images/viviendas/viviendas-4.png" class="full-width image-filtered cursor-pointer" />
-                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
 
                 <div class="col-6">
                   <img src="assets/images/viviendas/viviendas-5.png" class="full-width image-filtered cursor-pointer" />
-                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
                 <div class="col-6">
                   <img src="assets/images/viviendas/viviendas-6.png" class="full-width image-filtered cursor-pointer" />
-                  <div vif="editing" class="h6 text-center text-grey-1 cursor-pointer no-select">Edit Image</div>
                 </div>
               </div>
 
@@ -331,9 +353,10 @@
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
-          <!-- end Tipos de inversiones Realizadas -->
+          <!-- end Inversiones Realizadas -->
 
           <!-- Datos de Contacto? -->
           <div class="card">
@@ -343,53 +366,58 @@
 
             <div class="card-section">
               <div vif="not-editing" class="gutter-lg">
-                <div class="card-bordered">
-                  <div class="row items-center gutter-lg">
+                <div vcond class="card-bordered" onclick="openUrl('https://discordapp.com/users/{{social_discord}}')">
+                  <div class="row items-center gutter-col-lg">
                     <div class="col-grow">
-                      <img class="inherit-display contact-icon" src="assets/images/icons/discord.svg" />
+                      <img voff-hover class="inherit-display contact-icon" src="assets/images/icons/discord.svg" />
+                      <img von-hover class="inherit-display contact-icon" src="assets/images/icons/discord-white.svg" />
                     </div>
                     <div class="col-grow col-sm-9">
-                      <div class="text-grey-2">{{social_discord}}</div>
+                      <div>{{social_discord}}</div>
                     </div>
                   </div>
                 </div>
-                <div class="card-bordered">
-                  <div class="row items-center gutter-lg">
+                <div vcond class="card-bordered" onclick="openUrl('mailto:{{social_email}}')">
+                  <div class="row items-center gutter-col-lg">
                     <div class="col-grow">
-                      <img class="inherit-display contact-icon" src="assets/images/icons/mail.svg" />
+                      <img voff-hover class="inherit-display contact-icon" src="assets/images/icons/mail.svg" />
+                      <img von-hover class="inherit-display contact-icon" src="assets/images/icons/mail-white.svg" />
                     </div>
                     <div class="col-grow col-sm-9">
-                      <div class="text-grey-2">{{social_email}}</div>
+                      <div>{{social_email}}</div>
                     </div>
                   </div>
                 </div>
-                <div class="card-bordered">
-                  <div class="row items-center gutter-lg">
+                <div vcond class="card-bordered" onclick="openUrl('tel:{{social_phone}}')">
+                  <div class="row items-center gutter-col-lg">
                     <div class="col-grow">
-                      <img class="inherit-display contact-icon" src="assets/images/icons/phone.svg" />
+                      <img voff-hover class="inherit-display contact-icon" src="assets/images/icons/phone.svg" />
+                      <img von-hover class="inherit-display contact-icon" src="assets/images/icons/phone-white.svg" />
                     </div>
                     <div class="col-grow col-sm-9">
-                      <div class="text-grey-2" class="text-grey-2">{{social_phone}}</div>
+                      <div>{{social_phone}}</div>
                     </div>
                   </div>
                 </div>
-                <div class="card-bordered">
-                  <div class="row items-center gutter-lg">
+                <div vcond class="card-bordered" onclick="openUrl('{{social_website}}')">
+                  <div class="row items-center gutter-col-lg">
                     <div class="col-grow">
-                      <img class="inherit-display contact-icon" src="assets/images/icons/web.svg" />
+                      <img voff-hover class="inherit-display contact-icon" src="assets/images/icons/web.svg" />
+                      <img von-hover class="inherit-display contact-icon" src="assets/images/icons/web-white.svg" />
                     </div>
                     <div class="col-grow">
-                      <div class="text-grey-2">{{social_website}}</div>
+                      <div>{{social_website}}</div>
                     </div>
                   </div>
                 </div>
-                <div class="card-bordered">
-                  <div class="row items-center gutter-lg">
+                <div vcond class="card-bordered" onclick="openUrl(`https://www.google.com/maps/search/{{social_location}}`)">
+                  <div class="row items-center gutter-col-lg">
                     <div class="col-grow">
-                      <img class="inherit-display contact-icon" src="assets/images/icons/pin-location.svg" />
+                      <img voff-hover class="inherit-display contact-icon" src="assets/images/icons/pin-location.svg" />
+                      <img von-hover class="inherit-display contact-icon" src="assets/images/icons/pin-location-white.svg" />
                     </div>
                     <div class="col-grow col-sm-9">
-                      <div class="text-grey-2">{{social_location}}</div>
+                      <div>{{social_location}}</div>
                     </div>
                   </div>
                 </div>
@@ -490,10 +518,12 @@
     </div>
     <!-- end main container-->
 
-    <!-- bottom -->
-    <div class="bottom-wrapper">
+    <!-- save button -->
+    <div class="btn-bottom-wrapper">
       <div class="btn-save-wrapper">
-        <button id="btn-save" class="btn cursor-pointer text-center full-width text-white">Guardar Cambios</button>
+        <button id="btn-save" class="btn btn-save cursor-pointer text-center full-width text-white">
+          Guardar Cambios
+        </button>
       </div>
     </div>
 

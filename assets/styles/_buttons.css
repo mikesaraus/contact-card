@@ -1,7 +1,7 @@
 .btn {
   border: none;
   color: white;
-  padding: 20px 35px;
+  padding: 15px 30px;
   cursor: pointer;
   font-size: var(--base-font-size);
   border-radius: var(--border-radius);
@@ -16,21 +16,32 @@
   top: 0;
 }
 
-.bottom-wrapper {
-  padding: 15px;
+.btn-bottom-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  bottom: 0;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  padding: 2.5em;
 }
 
 .btn-save-wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 1140px;
+  width: 100%;
 }
 
 .btn-save {
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
