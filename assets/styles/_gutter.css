@@ -1,81 +1,300 @@
 /* gutter */
+
 .gutter-sm {
-  margin-top: -8px;
-  margin-left: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
 }
 
-.gutter-sm > * {
-  margin-top: 8px;
-  margin-left: 8px;
+.gutter-sm>* {
+    margin-top: 8px;
+    margin-left: 8px;
 }
 
 .gutter-md {
-  margin-top: -12px;
-  margin-left: -12px;
+    margin-top: -12px;
+    margin-left: -12px;
 }
 
-.gutter-md > * {
-  margin-top: 12px;
-  margin-left: 12px;
+.gutter-md>* {
+    margin-top: 12px;
+    margin-left: 12px;
 }
 
 .gutter-lg {
-  margin-top: -18px;
-  margin-left: -18px;
+    margin-top: -18px;
+    margin-left: -18px;
 }
 
-.gutter-lg > * {
-  margin-top: 18px;
-  margin-left: 18px;
+.gutter-lg>* {
+    margin-top: 18px;
+    margin-left: 18px;
 }
 
 .gutter-xl {
-  margin-top: -24px;
-  margin-left: -24px;
+    margin-top: -24px;
+    margin-left: -24px;
 }
 
-.gutter-xl > * {
-  margin-top: 24px;
-  margin-left: 24px;
+.gutter-xl>* {
+    margin-top: 24px;
+    margin-left: 24px;
 }
+
 
 /* col gutter */
+
 .gutter-col-sm {
-  margin-top: -8px;
-  margin-left: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
 }
 
-.gutter-col-sm > * {
-  padding-top: 8px;
-  padding-left: 8px;
+.gutter-col-sm>* {
+    padding-top: 8px;
+    padding-left: 8px;
 }
 
 .gutter-col-md {
-  margin-top: -12px;
-  margin-left: -12px;
+    margin-top: -12px;
+    margin-left: -12px;
 }
 
-.gutter-col-md > * {
-  padding-top: 12px;
-  padding-left: 12px;
+.gutter-col-md>* {
+    padding-top: 12px;
+    padding-left: 12px;
 }
 
 .gutter-col-lg {
-  margin-top: -18px;
-  margin-left: -18px;
+    margin-top: -18px;
+    margin-left: -18px;
 }
 
-.gutter-col-lg > * {
-  padding-top: 18px;
-  padding-left: 18px;
+.gutter-col-lg>* {
+    padding-top: 18px;
+    padding-left: 18px;
 }
 
 .gutter-col-xl {
-  margin-top: -24px;
-  margin-left: -24px;
+    margin-top: -24px;
+    margin-left: -24px;
 }
 
-.gutter-col-xl > * {
-  padding-top: 24px;
-  padding-left: 24px;
+.gutter-col-xl>* {
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+
+/* Additional sizes for small and medium screens */
+
+@media (min-width: 414px) {
+    /* gutter */
+    .sm-gutter-sm {
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    .sm-gutter-sm>* {
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    .sm-gutter-md {
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+    .sm-gutter-md>* {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    .sm-gutter-lg {
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    .sm-gutter-lg>* {
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+    .sm-gutter-xl {
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .sm-gutter-xl>* {
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+    /* col gutter */
+    .sm-gutter-col-sm {
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    .sm-gutter-col-sm>* {
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .sm-gutter-col-md {
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+    .sm-gutter-col-md>* {
+        padding-top: 12px;
+        padding-left: 12px;
+    }
+    .sm-gutter-col-lg {
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    .sm-gutter-col-lg>* {
+        padding-top: 18px;
+        padding-left: 18px;
+    }
+    .sm-gutter-col-xl {
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .sm-gutter-col-xl>* {
+        padding-top: 24px;
+        padding-left: 24px;
+    }
+}
+
+
+/* Additional sizes for medium and large screens */
+
+@media (min-width: 800px) {
+    /* gutter */
+    .md-gutter-sm {
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    .md-gutter-sm>* {
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    .md-gutter-md {
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+    .md-gutter-md>* {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    .md-gutter-lg {
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    .md-gutter-lg>* {
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+    .md-gutter-xl {
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .md-gutter-xl>* {
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+    /* col gutter */
+    .md-gutter-col-sm {
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    .md-gutter-col-sm>* {
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .md-gutter-col-md {
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+    .md-gutter-col-md>* {
+        padding-top: 12px;
+        padding-left: 12px;
+    }
+    .md-gutter-col-lg {
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    .md-gutter-col-lg>* {
+        padding-top: 18px;
+        padding-left: 18px;
+    }
+    .md-gutter-col-xl {
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .md-gutter-col-xl>* {
+        padding-top: 24px;
+        padding-left: 24px;
+    }
+}
+
+
+/* Additional sizes for extra large screens */
+
+@media (min-width: 1200px) {
+    /* gutter */
+    .lg-gutter-sm {
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    .lg-gutter-sm>* {
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    .lg-gutter-md {
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+    .lg-gutter-md>* {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    .lg-gutter-lg {
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    .lg-gutter-lg>* {
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+    .lg-gutter-xl {
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .lg-gutter-xl>* {
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+    /* col gutter */
+    .lg-gutter-col-sm {
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    .lg-gutter-col-sm>* {
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .lg-gutter-col-md {
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+    .lg-gutter-col-md>* {
+        padding-top: 12px;
+        padding-left: 12px;
+    }
+    .lg-gutter-col-lg {
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    .lg-gutter-col-lg>* {
+        padding-top: 18px;
+        padding-left: 18px;
+    }
+    .lg-gutter-col-xl {
+        margin-top: -24px;
+        margin-left: -24px;
+    }
+    .lg-gutter-col-xl>* {
+        padding-top: 24px;
+        padding-left: 24px;
+    }
 }

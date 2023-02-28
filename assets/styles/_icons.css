@@ -1,36 +1,44 @@
 .icon {
-  align-items: center;
-  cursor: inherit;
-  display: inline-flex;
-  font-size: inherit;
-  justify-content: center;
-  -webkit-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-
-  word-wrap: normal;
-  fill: currentColor;
-  box-sizing: initial;
-  flex-shrink: 0;
-  letter-spacing: normal;
-  line-height: 1;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  white-space: nowrap;
-
-  height: 13px;
-  width: 13px;
+    align-items: center;
+    cursor: inherit;
+    display: inline-flex;
+    font-size: inherit;
+    justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    word-wrap: normal;
+    fill: currentColor;
+    box-sizing: initial;
+    flex-shrink: 0;
+    letter-spacing: normal;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    height: 13px;
+    width: 13px;
 }
 
-.icon > img {
-  height: 13px;
-  width: 13px;
+.icon>img {
+    height: 13px;
+    width: 13px;
 }
 
 .icon-top-wrapper {
-  display: inline-block;
-  position: absolute;
-  margin-left: 10px;
-  top: 5px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+    top: 5px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-color);
+}
+
+.card-bordered:hover .contact-icon {
+    fill: white;
 }
