@@ -88,6 +88,10 @@ hr.vertical {
   position: relative;
 }
 
+.inherit-display {
+  display: inherit;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -95,17 +99,6 @@ hr.vertical {
 .image-filtered:not(:hover) {
   filter: grayscale(100%);
   opacity: 0.2;
-}
-
-.card-bordered {
-  padding: 18px;
-  cursor: pointer;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-}
-
-.card-bordered:hover {
-  border-color: var(--secondary-color);
 }
 
 .no-select {
@@ -116,4 +109,9 @@ hr.vertical {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
 }

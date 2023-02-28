@@ -2,6 +2,7 @@
   border: none;
   color: white;
   padding: 20px 35px;
+  cursor: pointer;
   font-size: var(--base-font-size);
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
@@ -13,4 +14,23 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.bottom-wrapper {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-save-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1140px;
+}
+
+.btn-save {
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
 }

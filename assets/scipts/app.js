@@ -2,7 +2,7 @@ const userInfo = {
   name: 'Jose Mu&#241;oz',
   position: 'iNversor Ingenioso',
   role: 'Master & Commander',
-  avatar: 'assets/images/profile.png',
+  avatar: 'assets/images/profile.jpeg',
   bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
   social_discord: 'Jose Mu&#241;oz',
   social_email: 'jose@lin.es',
@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Editing button element
   const btnEdit = document.getElementById('btn-edit');
-  btnEdit.onclick = edit;
+  if (btnEdit) btnEdit.onclick = edit;
   const btnSave = document.getElementById('btn-save');
-  btnSave.onclick = save;
+  if (btnSave) btnSave.onclick = save;
 
   // Initialize
   function init() {
